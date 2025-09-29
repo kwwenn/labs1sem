@@ -18,8 +18,6 @@ class Program
         string formattedFunction = function.ToString("F2");
             
         Console.WriteLine(formattedFunction);
-        Console.WriteLine("a = " + a + ", b = " + b);   
-        Console.WriteLine($"a = {a}, b = {b}");
-        Console.WriteLine("a = {0}, b = {1}",a,b);
     }
 }
+
