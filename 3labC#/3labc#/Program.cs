@@ -153,6 +153,7 @@ namespace _2lab
         }
         static void sort()
         {
+            Console.WriteLine("Введите длину массива:");
             int n = lenInput();
             int[] arr = newArray(n);
             int[] copyArr = copyArray(arr);
@@ -214,8 +215,8 @@ namespace _2lab
                         break;
 
                     case "3":
-                        Console.WriteLine("Введите длину массива:");
-                        sort(); break;
+                        sort(); 
+                        break;
 
                     case "4":
                         bool confirm = true;
