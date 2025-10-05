@@ -1,8 +1,0 @@
-C:\Users\korig\source\repos\3labc#\3labc#\bin\Debug\3labc#.exe.config
-C:\Users\korig\source\repos\3labc#\3labc#\bin\Debug\3labc#.exe
-C:\Users\korig\source\repos\3labc#\3labc#\bin\Debug\3labc#.pdb
-C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.csproj.AssemblyReference.cache
-C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.csproj.CoreCompileInputs.cache
-C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.exe
-C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.pdb
-C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.exe.config
