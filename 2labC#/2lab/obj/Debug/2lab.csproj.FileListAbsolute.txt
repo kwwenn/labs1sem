@@ -6,3 +6,11 @@ C:\Users\Acer\source\repos\2lab\2lab\obj\Debug\2lab.csproj.CoreCompileInputs.cac
 C:\Users\Acer\source\repos\2lab\2lab\obj\Debug\2lab.exe
 C:\Users\Acer\source\repos\2lab\2lab\obj\Debug\2lab.pdb
 C:\Users\Acer\source\repos\2lab\2lab\obj\Debug\2lab.exe.config
+C:\Users\korig\source\repos\2labC#\2lab\bin\Debug\2lab.exe.config
+C:\Users\korig\source\repos\2labC#\2lab\bin\Debug\2lab.exe
+C:\Users\korig\source\repos\2labC#\2lab\bin\Debug\2lab.pdb
+C:\Users\korig\source\repos\2labC#\2lab\obj\Debug\2lab.csproj.AssemblyReference.cache
+C:\Users\korig\source\repos\2labC#\2lab\obj\Debug\2lab.exe.config
+C:\Users\korig\source\repos\2labC#\2lab\obj\Debug\2lab.csproj.CoreCompileInputs.cache
+C:\Users\korig\source\repos\2labC#\2lab\obj\Debug\2lab.exe
+C:\Users\korig\source\repos\2labC#\2lab\obj\Debug\2lab.pdb

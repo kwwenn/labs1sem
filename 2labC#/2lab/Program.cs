@@ -16,9 +16,10 @@ namespace _2lab
                 {
                     case "1":
                         const double pi = Math.PI;
-                        const double e = Math.E;
                         int a;
                         int b;
+                        double hypot = 0;
+                        int counter = 0;
                         
                         Console.Write("Введите а: ");
                         while ((!int.TryParse(Console.ReadLine(), out a)))
@@ -30,7 +31,30 @@ namespace _2lab
 
                         double function = (Math.Pow(Math.Cos(pi), 7) + Math.Sqrt(Math.Log(Math.Pow(b, 4)))) / Math.Pow(Math.Sin((pi / 2) + a), 2);
 
-                        Console.WriteLine(Math.Round(function, 2)); start = false; break;
+                        while (hypot != Math.Round(function, 2) && counter < 3)
+                        {
+                            Console.WriteLine("Попыток осталось: " + (3 - counter));
+                            
+                            Console.Write("Введите ответ: ");
+                            while ((!double.TryParse(Console.ReadLine(), out hypot)))
+                            { Console.WriteLine("Ошибка. Введите число"); }
+                            
+                            if (counter >= 3)
+                            {
+                                Console.WriteLine($"Вы проиграли. Правильный ответ: {Math.Round(function, 2)}");
+                            }
+                            
+                            if (hypot == Math.Round(function, 2))
+                            {
+                                Console.WriteLine("Ответ верный. Вы победили!");
+                            }
+                            else
+                            {
+                                ++counter;
+                                Console.WriteLine("Ответ неверный, попробуйте еще раз");
+                            }
+                        }
+                        break;
 
                     case "2":
                         Console.WriteLine("Гаврилов Дмитрий Сергеевич 6101-090301D"); start = false; break;
@@ -51,7 +75,10 @@ namespace _2lab
                                     Console.WriteLine("Некорректный ввод, попробуйте снова."); break;
                             }
                         } break;
-   
+
+                    case "4":
+
+
                     default:
                         Console.WriteLine("Некорректный ввод, попробуйте снова."); break;
                 }
