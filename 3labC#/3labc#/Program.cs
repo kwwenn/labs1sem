@@ -6,11 +6,11 @@ using System.Security.Cryptography;
 using System.Security.Policy;
 
 
-namespace _2lab
+namespace _3lab
 {
     internal class Program
     {
-        static int intInput()
+        static int IntInput()
         {
             int number;
             while((!int.TryParse((Console.ReadLine()), out number)))
@@ -18,7 +18,7 @@ namespace _2lab
             return number;
             
         }
-        static double doubleInput()
+        static double DoubleInput()
         {
             double number;
             while ((!double.TryParse((Console.ReadLine()), out number)))
@@ -26,7 +26,7 @@ namespace _2lab
             return number;
 
         }
-        static int lenInput()
+        static int LenInput()
         {
             int number;
             while ((!int.TryParse((Console.ReadLine()), out number)) || number < 0)
@@ -34,7 +34,7 @@ namespace _2lab
             return number;
 
         }
-        static int[] newArray(int n)
+        static int[] NewArray(int n)
         {
             int[] arr = new int[n];
             Random rnd = new Random();
@@ -45,16 +45,21 @@ namespace _2lab
             }
             return arr;
         }
-        static int[] copyArray(int[] arr)
+        static int[] CopyArray(int[] arr)
         {
-            int[] copyArr = (int[])arr.Clone();
+            int N = arr.Length;
+            int[] copyArr = new int[N];
+            for (int i = 0; i < N; i++)
+            {
+                copyArr[i] = arr[i];
+            }
             return copyArr;
         } 
-        static void printArray(int[] arr)
+        static void PrintArray(int[] arr)
         {
             if (arr.Length > 10)
             { 
-                Console.WriteLine("“Массивы не могут быть выведены на экран, так как длина массива больше 10”."); 
+                Console.WriteLine("Массивы не могут быть выведены на экран, так как длина массива больше 10."); 
             }
             else
             {
@@ -65,7 +70,7 @@ namespace _2lab
                 Console.Write("\n");
             }
         } 
-        static void bubbleSort(int[] arr)
+        static void BubbleSort(int[] arr)
         {
             int n = arr.Length;
             for (int i = 0; i < n - 1; i++)
@@ -81,7 +86,7 @@ namespace _2lab
                 }
             }
         }
-        static void shellSort(int[] arr)
+        static void ShellSort(int[] arr)
         {
             int n = arr.Length;
             int gap = n / 2;
@@ -101,12 +106,12 @@ namespace _2lab
                 gap /= 2;
             }
         }
-        static double func(int a, int b)
+        static double Func(int a, int b)
         {
             const double pi = Math.PI;
             return (Math.Pow(Math.Cos(pi), 7) + Math.Sqrt(Math.Log(Math.Pow(b, 4)))) / Math.Pow(Math.Sin((pi / 2) + a), 2);
         }
-        static void guess(double f)
+        static void Guess(double f)
         {
             double hypot = 0;
             int counter = 0;
@@ -116,7 +121,7 @@ namespace _2lab
                 Console.WriteLine("Попыток осталось: " + (3 - counter));
 
                 Console.Write("Введите ответ: ");
-                hypot = doubleInput();
+                hypot = DoubleInput();
 
                 if (counter >= 3)
                 {
@@ -134,66 +139,77 @@ namespace _2lab
                 }
             }
         }
-        static void game()
+        static void Game()
         {
 
             Console.Write("Введите а: ");
-            int a = intInput();
+            int a = IntInput();
 
             Console.Write("Введите b: ");
-            int b = intInput();
+            int b = IntInput();
 
-            double function = func(a, b);
+            double function = Func(a, b);
 
-            guess(function);
+            Guess(function);
         }
-        static void author()
+        static void Author()
         {
             Console.WriteLine("Гаврилов Дмитрий Сергеевич 6101-090301D");
         }
-        static void sort()
+        static void Sort()
         {
             Console.WriteLine("Введите длину массива:");
-            int n = lenInput();
-            int[] arr = newArray(n);
-            int[] copyArr = copyArray(arr);
-            int[] origArr = copyArray(arr);
+            int n = LenInput();
+            int[] arr = NewArray(n);
+            int[] copyArr = CopyArray(arr);
+            int[] origArr = CopyArray(arr);
             var time1 = Stopwatch.StartNew();
-            bubbleSort(arr);
+            BubbleSort(arr);
             time1.Stop();
             
             var time2 = Stopwatch.StartNew();
-            shellSort(copyArr);
+            ShellSort(copyArr);
             time2.Stop();
             
             Console.WriteLine($"Время выполнения сортировки пузырьком: {time1.Elapsed.TotalSeconds} с");
             Console.WriteLine($"Время выполнения сортировки Шелла: {time2.Elapsed.TotalSeconds} с");
             if (n > 10)
             {
-                printArray(arr);
+                PrintArray(arr);
             }
             else
             {
                 Console.WriteLine("Исходный массив:");
-                printArray(origArr);
+                PrintArray(origArr);
                 Console.WriteLine("Отсортированный массив:");
-                printArray(arr);
+                PrintArray(arr);
             }
         }
-        static bool exit()
+        static bool Exit()
         {
-            Console.WriteLine("Вы уверены, что хотите выйти? (д/н)");
-            string answer = Console.ReadLine();
-            switch (answer)
+            bool confirm = true;
+            while (confirm)
             {
-                case "д":
-                    return false;
-                case "н":
-                    return true;
-                default:
-                    Console.WriteLine("Некорректный ввод, попробуйте снова.");
-                    return true;
+                Console.WriteLine("Вы уверены, что хотите выйти? (д/н)");
+                string answer = Console.ReadLine();
+                switch (answer)
+                {
+                    case "д":
+                        confirm = false;
+                        return false;
+
+
+                    case "н":
+                        confirm = false;
+                        return true;
+
+                        break;
+                    default:
+                        Console.WriteLine("Некорректный ввод, попробуйте снова.");
+                        break;
+                }
             }
+            return true;
         }
 
         static void Main(string[] args)
@@ -207,33 +223,19 @@ namespace _2lab
                 switch (input)
                 {
                     case "1":
-                        game();
+                        Game();
                         break; 
 
                     case "2":
-                        author(); 
+                        Author();
                         break;
 
                     case "3":
-                        sort(); 
+                        Sort(); 
                         break;
 
                     case "4":
-                        bool confirm = true;
-                        while (confirm)
-                        {
-                            bool ex = exit();
-                            if (ex == false)
-                            {
-                                start = false;
-                                confirm = false;
-
-                            }
-                            else
-                            {
-                                confirm = false;
-                            }
-                        }
+                        start = Exit();
                         break;
 
                     default:

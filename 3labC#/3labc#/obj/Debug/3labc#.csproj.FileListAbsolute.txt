@@ -6,3 +6,11 @@ C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.csproj.CoreCompileInp
 C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.exe
 C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.pdb
 C:\Users\korig\source\repos\3labc#\3labc#\obj\Debug\3labc#.exe.config
+C:\Users\Acer\source\repos\3labC#\3labc#\bin\Debug\3labc#.exe.config
+C:\Users\Acer\source\repos\3labC#\3labc#\bin\Debug\3labc#.exe
+C:\Users\Acer\source\repos\3labC#\3labc#\bin\Debug\3labc#.pdb
+C:\Users\Acer\source\repos\3labC#\3labc#\obj\Debug\3labc#.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\3labC#\3labc#\obj\Debug\3labc#.exe.config
+C:\Users\Acer\source\repos\3labC#\3labc#\obj\Debug\3labc#.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\3labC#\3labc#\obj\Debug\3labc#.exe
+C:\Users\Acer\source\repos\3labC#\3labc#\obj\Debug\3labc#.pdb
