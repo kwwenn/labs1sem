@@ -1,0 +1,8 @@
+C:\Users\Acer\source\repos\placlab2\placlab2\bin\Debug\placlab2.exe.config
+C:\Users\Acer\source\repos\placlab2\placlab2\bin\Debug\placlab2.exe
+C:\Users\Acer\source\repos\placlab2\placlab2\bin\Debug\placlab2.pdb
+C:\Users\Acer\source\repos\placlab2\placlab2\obj\Debug\placlab2.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\placlab2\placlab2\obj\Debug\placlab2.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\placlab2\placlab2\obj\Debug\placlab2.exe
+C:\Users\Acer\source\repos\placlab2\placlab2\obj\Debug\placlab2.pdb
+C:\Users\Acer\source\repos\placlab2\placlab2\obj\Debug\placlab2.exe.config
