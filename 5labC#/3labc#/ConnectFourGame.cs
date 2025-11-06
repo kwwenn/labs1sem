@@ -1,5 +1,4 @@
-﻿using _5lab;
-using System;
+﻿using System;
 
 namespace _3lab
 {
