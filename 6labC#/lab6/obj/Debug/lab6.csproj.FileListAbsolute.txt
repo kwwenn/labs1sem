@@ -1,0 +1,12 @@
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.csproj.AssemblyReference.cache
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.Properties.Resources.resources
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.csproj.GenerateResource.cache
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+C:\Users\korig\source\repos\lab6\lab6\bin\Debug\lab6.exe.config
+C:\Users\korig\source\repos\lab6\lab6\bin\Debug\lab6.exe
+C:\Users\korig\source\repos\lab6\lab6\bin\Debug\lab6.pdb
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.exe
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.pdb
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\lab6.exe.config
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\_3lab.FormMain.resources
+C:\Users\korig\source\repos\lab6\lab6\obj\Debug\_3lab.FormAbout.resources
